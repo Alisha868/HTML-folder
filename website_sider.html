@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Website Slider</title>
+
+<style>
+.header{
+text-align:center;
+background-color:blue;
+color:white;
+ padding:10px;
+}
+
+.slider, .slider2{
+width:100%;
+overflow:hidden;
+}
+
+.slider{
+height:250px;
+}
+
+.slider2{
+height:200px;
+margin-top:20px;
+}
+
+.slides, .slides2{
+display:flex;
+width:300%;
+gap:20px; 
+animation: slide 8s infinite;
+}
+
+.slides img{
+width:100%;
+height:250px;
+}
+
+.slides2 img{
+width:100%;
+height:200px;
+}
+@keyframes slide{
+0%{margin-left:0%;}
+50%{margin-left:-100%;}
+100%{margin-left:-200%;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h2>ABES Engineering College, Ghaziabad</h2>
+</div>
+
+<div class="slider">
+    <div class="slides">
+        <img src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg">
+        <img src="https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg">
+        <img src="https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg">
+    </div>
+</div>
+
+<div class="slider2">
+    <div class="slides2">
+        <img src="https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg">
+        <img src="https://images.pexels.com/photos/207684/pexels-photo-207684.jpeg">
+        <img src="https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg">
+    </div>
+</div>
+
+</body>
+</html>
